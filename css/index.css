@@ -1,0 +1,326 @@
+/*Fonts*/
+@font-face {
+    font-family: "Satoshi-Regular";
+    src: url('../fonts/Satoshi-Regular.ttf');
+}
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url('../fonts/Satoshi-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Satoshi-Black";
+    src: url('../fonts/Satoshi-Black.ttf') format('truetype');
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Satoshi-Regular";
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #ffcc00;
+    padding: 8px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Satoshi-Medium";
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.icons .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
+
+.carousel-slide.active {
+    display: flex;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-section {
+    background-color: #f4e541;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-text {
+    width: 50%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    font-family: "Satoshi-Bold";
+    margin-bottom: 20px;
+}
+.welcome-text p {
+    font-size: 20px;
+}
+
+.info-btn {
+    width: 150px; 
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #fffbd2;
+    font-size: 16px;
+    font-family: "Satoshi-Bold";
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+    background-color: #ffd700; 
+}
+
+.welcome-gif {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.welcome-gif img {
+    width: 320px;
+}
+
+.nightmare-dot{
+    background-image: url(../images/nightmare-bg.png);
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 400px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right; 
+    padding-right: 20px;
+}
+
+.nightmare-dot h1{
+    margin-right: 30px;
+    font-size: 36px;
+    color: white;
+}
+
+.nightmare-dot p{
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+.nightmare-dot .info-btn{
+    margin-right: 30px;
+}
+
+.zelda-dot{
+    background-image: url(../images/zelda-bg.png);
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 400px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right; 
+    padding-right: 20px;
+}
+
+.zelda-dot h1{
+    margin-right: 30px;
+    font-size: 36px;
+    color: white;
+}
+
+.zelda-dot p{
+    width: 50%;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.zelda-dot .info-btn{
+    margin-right: 30px;
+}
+
+/* Estilos para los puntos de navegación */
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ffd700;
+}
+
+/*Link Section*/
+.links{
+    margin-bottom: 50px;
+}
+
+.links .grid{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.links .grid .brand{
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.links .grid .brand .brand-img{
+    width: 150px;
+}
+
+/* Product Preview */
+.product-preview {
+    text-align: center;
+}
+
+.product-preview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.grid-product-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+}
+
+.product p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
