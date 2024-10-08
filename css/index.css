@@ -261,6 +261,7 @@ nav ul li a {
 /* Product Preview */
 .product-preview {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .product-preview h2 {
@@ -312,13 +313,71 @@ nav ul li a {
     background-color: #ff9900;
 }
 
+/*Fornite Section*/
+
+.fornite-section {
+    background-image: url(../images/fortnite-bg.png);
+    display: flex;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.fornite-section #fornite-content{
+    padding-left: 30px;
+    width: 50%;
+    padding-top: 60px;
+}
+
+.fornite-section #fornite-content  h2{
+    font-size: 80px;
+    font-family: "Satoshi-Bold";
+}
+
+.fornite-section #fornite-content p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#aside{
+    height: 650px;
+    width: 40%;
+    top: calc(50% -250px);
+    right: 5%;   
+}
+
+#aside model-viewer{
+    height: 650px;
+    width: 650px;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.fortnite-button{
+    width: 100px;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: "Satoshi-Bold";
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.fortnite-button:hover {
+    background-color: #ff9900;
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
 }
 
 footer p {

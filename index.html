@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LEGO Store</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/main.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
-                <img src="../images/Lego-Logo.jpg" alt="LEGO Store Logo">
+                <img src="images/Lego-Logo.jpg" alt="LEGO Store Logo">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Sets</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="html/products.html">Sets</a></li>
+                    <li><a href="html/aboutus.html">About Us</a></li>
                 </ul>
             </nav>
             <div class="icons">
-                <img src="../images/lupa.png" alt="Search" class="icon">
-                <img src="../images/bolsa-compra.png" alt="Shopping Bag" class="icon">
+                <img src="images/lupa.png" alt="Search" class="icon">
+                <img src="images/bolsa-compra.png" alt="Shopping Bag" class="icon">
             </div>
         </div>
     </header>
@@ -41,7 +43,7 @@
                         <button class="info-btn">More Info</button>
                     </div>
                     <div class="welcome-gif">
-                        <img src="../images/Lego-Faces.gif" alt="Lego Welcome gif">
+                        <img src="images/Lego-Faces.gif" alt="Lego Welcome gif">
                     </div>
                 </div>
             </div>
@@ -70,27 +72,27 @@
         <section class="links">
             <div class="grid">
                 <div class="brand">
-                    <img src="../images/Disney-Lego.png" alt="Disney" class="brand-img">
+                    <img src="images/Disney-Lego.png" alt="Disney" class="brand-img">
                     <h3>Disney</h3>
                 </div>
                 <div class="brand">
-                    <img src="../images/Marvel-Lego.png" alt="Marvel" class="brand-img">
+                    <img src="images/Marvel-Lego.png" alt="Marvel" class="brand-img">
                     <h3>Marvel</h3>
                 </div>
                 <div class="brand">
-                    <img src="../images/StarWars-Lego.png" alt="Star Wars" class="brand-img">
+                    <img src="images/StarWars-Lego.png" alt="Star Wars" class="brand-img">
                     <h3>Star Wars</h3>
                 </div>            
                 <div class="brand">
-                    <img src="../images/HP-Lego.png" alt="Harry Potter" class="brand-img">
+                    <img src="images/HP-Lego.png" alt="Harry Potter" class="brand-img">
                     <h3>Harry Potter</h3>
                 </div>         
                 <div class="brand">
-                    <img src="../images/Nintendo-Lego.png" alt="Nintendo" class="brand-img">
+                    <img src="images/Nintendo-Lego.png" alt="Nintendo" class="brand-img">
                     <h3>Nintendo</h3>
                 </div>
                 <div class="brand">
-                    <img src="../images/Halloween-Lego.png" alt="Halloween" class="brand-img">
+                    <img src="images/Halloween-Lego.png" alt="Halloween" class="brand-img">
                     <h3>Halloween</h3>
                 </div>
             </div>
@@ -99,17 +101,27 @@
             <h2>Featured Products</h2>
             <div class="grid-product-preview">
                 <div class="product">
-                    <img src="../images/Hogwarts-Lego.png" alt="Hogwarts-Lego">
+                    <img src="images/Hogwarts-Lego.png" alt="Hogwarts-Lego">
                     <h3>Harry Potter Sets</h3>
                     <p>Amazing LEGO set for creative builders.</p>
-                    <a href="products.html" class="button">View More</a>
+                    <a href="html/products.html" class="button">View More</a>
                 </div>
                 <div class="product">
-                    <img src="../images/Pesadillas-Lego.png" alt="Pesadillas-Lego">
+                    <img src="images/Pesadillas-Lego.png" alt="Pesadillas-Lego">
                     <h3>Halloween Sets</h3>
                     <p>Explore new worlds with this LEGO set.</p>
-                    <a href="products.html" class="button">View More</a>
+                    <a href="html/products.html" class="button">View More</a>
                 </div>
+            </div>
+        </section>
+        <section class="fornite-section">    
+            <div id="fornite-content">
+                <h2>Discover the Fortnite collection.</h2>            
+                <p>Discover the LEGO Fortnite collection, where iconic Fortnite characters and scenes come to life in brick form. Build, create, and explore the Fortnite universe with fun and creative LEGO sets!</p>
+                <button class="fortnite-button">Buy</button>
+            </div>
+            <div id="aside">
+                <model-viewer src="assets/Fortnite/scene.gltf" alt="Personaje Lego Fortnite" auto-rotate camera-controls ar ios- src="assets/Fortnite/scene.gltf"></model-viewer>
             </div>
         </section>
     </main>
